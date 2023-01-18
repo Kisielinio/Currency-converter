@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator walut</title>
+    <script defer src="JS/javascript.js"></script>
+    <link rel="stylesheet" href="CSS/body.css">
+    <link rel="stylesheet" href="CSS/form.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend>
+                <h1 class="form__legend">Kantor walutowy</h1>
+            </legend>
+            <p>
+                <label>
+                    <span class="form__text "><strong>Kwota do przeliczenia:</strong></span>
+                    <input class="form__field js-value" type="number" min="1" step="any" name="amount" required placeholder="Kwota PLN">
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span class="form__text form__text--extraMargin"><strong>Wybierz walute:</strong></span>
+                    <select class="form__options js-currency" name="currency">
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="CHF">CHF</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </label>
+            </p>
+            <p class="form__result"><strong class="js-result"></strong></p>
+        </fieldset>
+        <button type="submit" class="form__button js-button"><strong>Przelicz</strong></button>
+    </form>
+    <footer class="footer"> © Copyright by ME</footer>
+</body>
+
+</html>

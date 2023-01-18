@@ -1,0 +1,7 @@
+.footer{
+    background-color: rgb(124, 121, 121);
+    color: azure;
+    border: 2px solid rgb(0, 0, 0);
+    max-width: 500px;
+    margin: 200px auto;
+}
