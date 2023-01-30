@@ -14,7 +14,7 @@ formElement.addEventListener("submit", (event) => {
     let value = valueElement.value;
     let currency = currencyElement.value;
     let result;
-Funckja 
+
     switch (currency) {
         case "CHF":
             result = value / CHF;
@@ -30,5 +30,8 @@ Funckja
     }
     resultElement.innerText = `${result.toFixed(2)} ${currency}`;
 });
+
+
+
 
 
